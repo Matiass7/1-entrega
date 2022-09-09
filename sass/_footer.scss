@@ -1,0 +1,55 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15rem;
+    margin-top: 1rem;
+    background-color: #b1acb52e;
+    .atencion {
+        h2 {
+            color: #6b2bbf;
+        }
+        li {
+            font-family: $fuenteFooter;
+        }
+    }
+    .sub {
+        h2{
+            color: #6b2bbf;
+        }
+        .botonsub {
+            width: 6rem;
+            border-radius: 5px;
+        }
+    }
+    .redes {
+        i {
+            margin: 2rem;
+            font-size: 3rem;
+            color: #6b2bbf;
+        }
+    }
+}
+
+
+@media (min-width: 400px) and (max-width: 600px) {
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #b1acb52e;
+        flex-wrap: wrap;
+        .sub { 
+            display: none;
+        }
+        .redes {
+            display: flex;
+            flex-direction: column;
+            i {
+                margin: 0.5rem;
+                font-size: 1.5rem;
+                color: #6b2bbf;
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:$colorFondo;
+    height: 8rem;
+    margin-top: 0.5rem;
+    &__box {
+        display: flex;
+        margin-right: 10rem;
+        .header__logo {
+            .logo {
+                img {
+                    height: 8rem;
+                }
+            }
+        }
+        .header__search {
+            display: flex;
+            align-items: center;
+            .search {
+                input {
+                    height: 3rem;
+                    width: 20rem;
+                }
+                .botonsearch {
+                    color: $colorPrincipal;
+                    font-weight: 600;
+                    width: 6rem;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+    &__box2 {
+        display: flex;
+        align-items: center;
+        width: 15rem;
+        height: 4rem;
+        .header__usuario {
+            i {
+                font-size: 3rem;
+                margin-right: 3rem;
+                color:$colorPrincipal;
+                &:hover {
+                    color:$colorSecundario;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 400px) and (max-width: 600px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color:$colorFondo;
+        height: 8rem;
+        margin-top: 0.5rem;
+        &__box {
+            display: flex;
+            margin-right: 0rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            .header__logo {
+                .logo {
+                    img {
+                        height: 4rem;
+                    }
+                }
+            }
+            .header__search {
+                .search {
+                    input {
+                        height: 2rem;
+                        width: 10rem;
+                    }
+                    .botonsearch {
+                        width: 3.3rem;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+        &__box2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 10rem;
+            height: 4rem;
+            .header__usuario {
+                i {
+                    font-size: 2rem;
+                    margin: 0.5rem;
+                    color:$colorPrincipal;
+                }
+            }
+        }
+    }
+}

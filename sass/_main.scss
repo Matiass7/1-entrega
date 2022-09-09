@@ -1,0 +1,276 @@
+//Inicio
+.main {
+    margin-top: 1rem;
+    .wts {
+        @extend .boton;
+    }
+}
+
+
+//Productos
+.main__productos {
+    display: flex;
+    height: 55rem;
+    background-image: linear-gradient(#9146f5,#3d265a);
+    .productos__box {
+        display: flex;
+        margin-top: 5rem;
+        width: 100rem;
+        margin-left: 5rem;
+        .acordion__productos {
+            width: 10rem;
+        }
+        .procesadores__box {
+            margin-left: 10rem;
+            li {
+                @extend .borde;
+            }
+        }
+    }
+    .wts {
+        @extend .boton;
+    }
+}
+
+//Pcarmadas
+.main__pc {
+    display: flex;
+    height: 80rem;
+    justify-content: space-evenly;
+    background-image: linear-gradient(#9146f5,#3d265a);
+    .searchpc {
+        display: flex;
+        padding-top: 10rem;
+        .acordion {
+            width: 15rem;
+        }
+    }
+    .pcarmadas__img {
+        display: flex;
+        .pc__img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            a { 
+                @extend .borde;
+            }
+        }
+    }
+    .wts {
+        @extend .boton;
+    }
+}
+
+//ofertas
+.main__ofertas {
+    display: flex;
+    height: 80rem;
+    background-image: linear-gradient(#9146f5,#3d265a);
+    .searchofer {
+        display: flex;
+        margin-top: 5rem;
+        margin-left: 2rem;
+        .acor2 {
+            width: 15rem;
+        }
+    }
+    .descuentos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5rem;
+        .descuentos__img {
+            a {
+                img {
+                    @extend .borde;
+                    margin: 0.5rem
+                }
+            }
+        }
+    }
+    .wts {
+        @extend .boton;
+    }
+}
+
+//Ayuda
+.main__ayuda {
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(#9146f5,#3d265a);
+    h1 {
+        margin-left: 0.5rem;
+        color: white;
+    }
+    .ayuda__box {
+        padding-top: 1rem;
+        ul {
+            li {
+                font-weight: 500;
+                padding: 0.5rem;
+                a {
+                    font-family:$fuentePrincipal;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+    .wts {
+        @extend .boton;
+    }
+}
+
+
+
+
+
+
+
+
+@media (min-width: 400px) and (max-width: 600px) {
+    //Inicio
+    .main {
+        .wts {
+            position: fixed;
+            text-align: center;
+            right: 1.5rem;
+            bottom: 11rem;
+            i {
+                font-size: 3rem;
+                color: $colorPrincipal;
+            }
+        }
+    }
+
+    //Productos
+    .main__productos {
+        display: flex;
+        height: 40rem;
+        .productos__box {
+        display: flex;
+        margin-top: 2rem;
+        width: 0rem;
+        margin-left: 0rem;
+        .acordion__productos {
+            width: 10rem;
+            button {
+                font-size: 0.8rem;
+            }
+            }
+            .procesadores__box {
+                margin-left: 0;
+                .procesadores {
+                    img {
+                        width: 15rem;
+                        height: 6rem;
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+        .wts {
+            position: fixed;
+            text-align: center;
+            right: 1.5rem;
+            bottom: 3rem;
+            i {
+                font-size: 3rem;
+                color:$colorPrincipal;
+            }
+        }
+    }
+
+    //Pcarmadas
+        .main__pc {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            height: 40rem;
+            .searchpc {
+            display: flex;
+            padding-top: 3rem;
+                .acordion {
+                width: 10rem;
+                }
+            }
+            .pcarmadas__img {
+            display: flex;
+            padding-left: 2rem;
+            .pc__img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+                a { 
+                    border: 1px solid #00000024;
+                }
+                img {
+                    width: 20rem;
+                }
+            }
+        }   
+        .wts {
+            position: fixed;
+            text-align: center;
+            right: 1.5rem;
+            bottom: 3rem;
+            i {
+                font-size: 3rem;
+                color:$colorPrincipal;
+            }
+        }
+    }
+        //ofertas
+.main__ofertas {
+    display: flex;
+    flex-wrap: wrap;
+    height: 60rem;
+    .searchofer {
+        display: flex;
+        margin-top: 5rem;
+        margin-left: 1rem;
+        .acor2 {
+            width: 10rem;
+        }
+    }
+    .descuentos {
+        display: flex;
+        align-items: center;
+        .descuentos__img {
+            a {
+                img {
+                    height: 8rem;
+                    border: 1px solid #00000024;
+                    padding: 2rem;
+                }
+            }
+        }
+    }
+    .wts {
+        position: fixed;
+        text-align: center;
+        right: 1.5rem;
+        bottom: 3rem;
+        i {
+            font-size: 3rem;
+            color: $colorPrincipal;
+        }
+    }
+}
+}
+
+//Ayuda
+.main__ayuda {
+    .wts {
+        position: fixed;
+        text-align: center;
+        right: 1.5rem;
+        bottom: 9rem;
+        i {
+            font-size: 3rem;
+            color: $colorPrincipal;
+        }
+    }
+}

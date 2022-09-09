@@ -1,0 +1,52 @@
+.nav {
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:0.5rem ;
+    background-color: $colorFondo;
+    .nav__box {
+        display: flex;
+        ul {
+            display: flex;
+            list-style: none;
+            a {
+                font-family: $fuentePrincipal;
+                font-size: 1.2rem;
+                margin: 3rem;
+                color: $colorPrincipal;
+                text-decoration: none;
+                &:hover {
+                    color: $colorSecundario;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 400px) and (max-width: 600px) {
+    .nav {
+        height: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom:0.5rem ;
+        background-color: $colorFondo;
+        .nav__box {
+            display: flex;
+            ul {
+                display: flex;
+                list-style: none;
+                a {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    margin: 0.3rem;
+                    color:$colorPrincipal;
+                    text-decoration: none;
+                    transition: none;
+                }
+            }
+        }
+    }
+}
